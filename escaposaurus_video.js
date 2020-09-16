@@ -137,8 +137,22 @@ function unlockContacts() {
   p.innerHTML = prompt[sequenceNumber];
 
   var z = document.getElementsByClassName("contact-div");
-  for (var i = 0; i < z.length; i++) {
-    z[i].classList.remove("no-call");
+
+  const contactElems = [...z].filter((elem) => {
+    // extract contact name from ID --> divcontact-{contact-name}
+    const contactName = elem.id.split("-")[1];
+
+    // find corresponding contact
+    const contact = [...normalContacts, ...helperContacts].find(
+      (elem) => elem.vid === contactName
+    );
+
+    // filter out if sequence number player by contact
+    return contact.playsInSequence.includes(sequenceNumber);
+  });
+
+  for (const contactElem of contactElems) {
+    contactElem.classList.remove("no-call");
   }
 }
 
@@ -490,7 +504,11 @@ function openVideoWindow(vid, vid_folder) {
     var cl = document.getElementById("btn-closecall");
     cl.addEventListener("click", callbackCloseMissingCall);
   } else {
-    if (mainHintFound) {
+    const contactData = [...normalContacts, ...helperContacts].find(
+      (contact) => contact.vid === vid
+    );
+
+    if (mainHintFound && contactData.playsInSequence.includes(sequenceNumber)) {
       title = titleData.callTitle;
       src = vid_folder + "seq" + sequenceNumber + ".mp4";
       document
