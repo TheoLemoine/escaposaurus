@@ -22,7 +22,7 @@ var contactVideoRoot = videoRoot + "contact/";
 /*full path to intro / outro video*/
 var missionVideoPath = videoRoot + "intro/intro1.mp4";
 var introVideoPath = videoRoot + "intro/intro2.mp4";
-var missingVideoPath = videoRoot + "contact/Ada/final.mp4";
+var missingVideoPath = videoRoot + "contact/Ada/Seq4.mp4";
 var epilogueVideoPath = videoRoot + "epilogue/epiloguecredit.mp4";
 
 /*udisk JSON path*/
@@ -44,10 +44,30 @@ var udiskData = {
       },
       {
         foldername: "ada_clovale",
-        password: "georgeabitbol",
+        password: "Q4FD2A",
         sequence: 0,
-        files: ["heyo.test"],
-        folders: [],
+        files: [
+          "photo_tAB_1.jpg",
+          "phOTo_tab_2.jpg",
+          "MAil_loclier.jpg",
+          "brouillON_to_rh.png",
+        ],
+        folders: [
+          {
+            foldername: "recherches_bernoulli",
+            password: "68",
+            sequence: 1,
+            files: ["sCAn_notes_1.jpeg"],
+            folders: [
+              {
+                foldername: "ecriture_article",
+                password: "CAABOTMAON",
+                sequence: 2,
+                files: ["article_bernoulli.jpg"],
+              },
+            ],
+          },
+        ],
       },
       {
         foldername: "marie_faraday",
@@ -63,19 +83,44 @@ var udiskData = {
       },
       {
         foldername: "bruce_loclier",
-        files: ["mdp ada.png"],
+        files: ["mdp_ada_decrypte.jpg"],
         folders: [
           {
-            foldername: "testo",
-            files: [],
+            foldername: "photos_conférence_12-06-2017",
+            password: "big brain",
+            sequence: 3,
+            folders: [
+              {
+                foldername: "article_marie_faraday",
+                password: "imposiburu",
+                sequence: 99,
+                files: [],
+              },
+              {
+                foldername: "article_michael_cull",
+                password: "imposiburu",
+                sequence: 99,
+                files: [],
+              },
+              {
+                foldername: "article_terry_davis",
+                password: "imposiburu",
+                sequence: 99,
+                files: [],
+              },
+            ],
           },
           {
-            foldername: "testa",
-            files: [],
+            foldername: "algo_oracle_glover",
+            password:
+              "fdflubzjsrfv5d123548vdfjbuzvyagdjfpbtv541d3284v57trzshjbejfnvui",
+            sequence: 99,
           },
           {
-            foldername: "testi",
-            files: [],
+            foldername: "retours_S3_Etudiants",
+            password:
+              "fdflubzjsrfv5d123548vdfjbuzvyagdjfpbtv541d3284v57trzshjbejfnvui",
+            sequence: 99,
           },
         ],
       },
@@ -143,7 +188,7 @@ var udiskData = {
 */
 var gameTitle = "Un thésard à Cambrouille";
 var gameDescriptionHome =
-  "Ceci est une courte aventure d'exemple pour montrer ce que le framework Escaposaurus permet facilement de réaliser.<br/>Le code source est téléchargeable sur <a href='https://github.com/RedNaK/escaposaurus' target='_blank'>GitHub</a>";
+  "Ceci est une courte aventure où vous incarnez un jeune thésard tout juste arrivé à l'Université de Cambrouille. <br/>Le code source est téléchargeable sur <a href='https://github.com/RedNaK/escaposaurus' target='_blank'>GitHub</a>";
 var gameMissionCall =
   "Vous avez été accepté à l'Université de Cambrouille pour votre thèse";
 var gameMissionAccept =
@@ -187,7 +232,7 @@ var prompt = [
   if you put "none" or anything that is not an existing filename, the player will NOT be able to call the contacts during this sequence
   if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence
 */
-var seqMainHint = ["noHint", "noHint", "noHint", "noHint"];
+var seqMainHint = ["noHint", "noHint", "noHint", "article_bernoulli.jpg"];
 
 /*
 	contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named 
@@ -198,7 +243,7 @@ var normalContacts = [
   {
     vid: "Ada",
     vod_folder: "",
-    playsInSequence: [2, 3],
+    playsInSequence: [3, 4],
     username: "Ada Clovale",
     canal: "video",
     avatar: "avatar.png",
@@ -206,7 +251,7 @@ var normalContacts = [
   {
     vid: "Bruce",
     vod_folder: "",
-    playsInSequence: [0, 1],
+    playsInSequence: [0, 1, 2],
     username: "Bruce Loclier (Directeur labo)",
     canal: "video",
     avatar: "avatar.png",
@@ -253,7 +298,7 @@ var missingContact = {
   vod_folder: "",
   username: "Ada Clovale",
   canal: "video",
-  avatar: "avatar.jpg",
+  avatar: "avatar.png",
 };
 
 /*Lou only send text message, they are stored here*/

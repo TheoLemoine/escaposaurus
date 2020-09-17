@@ -26,7 +26,7 @@ body {
 }
 
 video {
-  max-width: 960px;
+  max-width: 800px;
 }
 
 @font-face {
@@ -199,7 +199,7 @@ video {
   top: 10%;
   border: 1px solid white;
   background-color: #000;
-  width: 1000px;
+  width: 820px;
   text-align: center;
 }
 
@@ -239,6 +239,7 @@ video {
 /*we override part of the lightbox style*/
 .lightbox-image {
   max-height: 90vh;
+  max-width: 80vw;
 }
 
 #notnowPrompt-window button,
@@ -430,6 +431,10 @@ ul {
 
 .arbo:last-child:after {
   display: none;
+}
+
+#vid-overlay {
+  height: 50vh;
 }
 
 /*for the animation of the windows we open and close*/
