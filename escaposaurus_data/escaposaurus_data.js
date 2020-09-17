@@ -296,6 +296,7 @@ var helperContacts = [
 var missingContact = {
   vid: "Ada",
   vod_folder: "",
+  playsInSequence: [4],
   username: "Ada Clovale",
   canal: "video",
   avatar: "avatar.png",
