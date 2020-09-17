@@ -143,7 +143,7 @@ function unlockContacts() {
     const contactName = elem.id.split("-")[1];
 
     // find corresponding contact
-    const contact = [...normalContacts, ...helperContacts].find(
+    const contact = [...normalContacts, ...helperContacts, missingContact].find(
       (elem) => elem.vid === contactName
     );
 
@@ -504,9 +504,11 @@ function openVideoWindow(vid, vid_folder) {
     var cl = document.getElementById("btn-closecall");
     cl.addEventListener("click", callbackCloseMissingCall);
   } else {
-    const contactData = [...normalContacts, ...helperContacts].find(
-      (contact) => contact.vid === vid
-    );
+    const contactData = [
+      ...normalContacts,
+      ...helperContacts,
+      missingContact,
+    ].find((contact) => contact.vid === vid);
 
     if (mainHintFound && contactData.playsInSequence.includes(sequenceNumber)) {
       title = titleData.callTitle;
@@ -606,6 +608,7 @@ function closeNewContact(d) {
   closeIt(d);
   var nc = document.getElementById("normal-contact");
   createContact(missingContact, nc);
+  unlockContacts();
 }
 
 function closeAppelEntrant(d) {

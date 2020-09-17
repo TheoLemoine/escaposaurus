@@ -22,7 +22,7 @@ var contactVideoRoot = videoRoot + "contact/";
 /*full path to intro / outro video*/
 var missionVideoPath = videoRoot + "intro/intro1.mp4";
 var introVideoPath = videoRoot + "intro/intro2.mp4";
-var missingVideoPath = videoRoot + "contact/Ada/Seq4.mp4";
+var missingVideoPath = videoRoot + "contact/missing/final.mp4";
 var epilogueVideoPath = videoRoot + "epilogue/epiloguecredit.mp4";
 
 /*udisk JSON path*/
@@ -138,7 +138,7 @@ var gameMissionAccept =
 var gameCredit =
   "Un jeu conçu et réalisé par : <br/>SIMON Noé<br/>BOURGOIN Baptiste<br/>GRÉGOIRE Alice<br/>POBELLE Solène<br/>LEMOINE Théo";
 var gameThanks =
-  "Remerciements : <br/>NOM PRENOM<br/>NOM PRENOM<br/>NOM PRENOM<br/>NOM PRENOM<br/>NOM PRENOM";
+  "Remerciements au testeurs : <br/>VIGUIER Léo<br/>TERRIEN Antonin<br/>ACEITUNO Pierre<br/>NOM PRENOM<br/>NOM PRENOM";
 
 var OSName = "Accès ENT — Université de Cambrouille";
 var explorerName = "ftp://cambrouille.net/";
@@ -234,8 +234,10 @@ var helperContacts = [
   the last call, it can be the person we find in the end or anyone else we call to end the quest, 
   allows the game to know it is the final contact that is called and to proceed with the ending
 */
+
+// last call contact prop vid must be 'missing'
 var missingContact = {
-  vid: "Ada",
+  vid: "missing",
   vod_folder: "",
   playsInSequence: [4],
   username: "Ada Clovale",
@@ -243,7 +245,9 @@ var missingContact = {
   avatar: "avatar.png",
 };
 
-/*Lou only send text message, they are stored here*/
+/*
+  Text messages are stored here
+*/
 var tips = {
   Assistance: [
     "Assistance Informatique sur cambrouille.net/info",
@@ -253,16 +257,21 @@ var tips = {
   ],
 };
 
-/*text for the instruction / solution windows*/
+/*
+  text for the instruction / solution windows
+*/
 var instructionText = {
   winState:
-    "Vous avez retrouvé l'id GPS et vous pouvez appeler les secours du secteur.",
+    "Vous avez trouvé les preuves incriminant le professeur Bruce Loclier.",
   lackMainHint: "",
   password:
     "Vous devez trouver et entrer le mot de passe d'un des dossiers de la boite de droite. Vous pouvez trouver le mot de passe en appelant les contacts de la boite de gauche.<br/>Pour entrer un mot de passe, cliquez sur le nom d'un dossier et une fenêtre s'affichera pour que vous puissiez donner le mot de passe.",
 };
 
-/*please note the %s into the text that allow to automatically replace them with the right content according to which sequence the player is in*/
+/*
+  please note the %s into the text that allow to automatically replace them with the right content according 
+  to which sequence the player is in
+*/
 var solutionText = {
   winState: "Si vous avez trouvé les fichiers, Bravo.",
   lackMainHint: "Vous devez ouvrir le fichier <b>%s</b><br/>",
