@@ -43,6 +43,24 @@ var udiskData = {
         files: [],
       },
       {
+        foldername: "terry_davis",
+        password: "never gona give you up",
+        sequence: 99,
+        files: [],
+      },
+      {
+        foldername: "marie_faraday",
+        password: "never gona give you up",
+        sequence: 99,
+        files: [],
+      },
+      {
+        foldername: "michael_cull",
+        password: "never gona give you up",
+        sequence: 99,
+        files: [],
+      },
+      {
         foldername: "ada_clovale",
         password: "Q4FD2A",
         sequence: 0,
@@ -68,18 +86,6 @@ var udiskData = {
             ],
           },
         ],
-      },
-      {
-        foldername: "marie_faraday",
-        password: "never gona give you up",
-        sequence: 99,
-        files: [],
-      },
-      {
-        foldername: "michael_cull",
-        password: "never gona give you up",
-        sequence: 99,
-        files: [],
       },
       {
         foldername: "bruce_loclier",
@@ -112,80 +118,20 @@ var udiskData = {
           },
           {
             foldername: "algo_oracle_glover",
-            password:
-              "fdflubzjsrfv5d123548vdfjbuzvyagdjfpbtv541d3284v57trzshjbejfnvui",
+            password: "fdflubzjsv57trzshjbejfnvui",
             sequence: 99,
           },
           {
             foldername: "retours_S3_Etudiants",
-            password:
-              "fdflubzjsrfv5d123548vdfjbuzvyagdjfpbtv541d3284v57trzshjbejfnvui",
+            password: "fdflubzjsrfv5dejfnvui",
             sequence: 99,
           },
         ],
-      },
-      {
-        foldername: "terry_davis",
-        password: "never gona give you up",
-        sequence: 99,
-        files: [],
       },
     ],
   },
 };
 
-/*
-var udiskData = {
-  root: {
-    files: ["scan_memo.png"],
-    folders: [
-      {
-        foldername: "gaming",
-        files: ["20190509_316504.mp4"],
-      },
-      {
-        foldername: "vieillescartespostales",
-        files: ["carte1.jpg", "carte2.jpg", "carte3.jpg", "carte4.jpg"],
-      },
-      {
-        foldername: "dcim",
-        password: "forclaz",
-        sequence: 1,
-        files: [
-          "20180807_103031.jpg",
-          "20180807_114356.jpg",
-          "20180807_123538.mp4",
-        ],
-      },
-      {
-        foldername: "itineraire2018",
-        folders: [
-          {
-            foldername: "perso",
-            password: "nata",
-            sequence: 0,
-            files: ["FXHT4438a.jpg", "Screenshot20180701_Wanderplaner(1).jpg"],
-          },
-        ],
-      },
-      {
-        foldername: "itineraire2019",
-        password: "trient",
-        sequence: 2,
-        files: ["fortnitescreen.png", "swisstopo-screen.png"],
-        folders: [
-          {
-            foldername: "GPS",
-            password: "wandfluehorn",
-            sequence: 3,
-            files: ["idgps.png"],
-          },
-        ],
-      },
-    ],
-  },
-};
-*/
 var gameTitle = "Un thésard à Cambrouille";
 var gameDescriptionHome =
   "Ceci est une courte aventure où vous incarnez un jeune thésard tout juste arrivé à l'Université de Cambrouille. <br/>Le code source est téléchargeable sur <a href='https://github.com/RedNaK/escaposaurus' target='_blank'>GitHub</a>";
