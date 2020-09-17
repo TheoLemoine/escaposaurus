@@ -27,6 +27,7 @@ body {
 
 video {
   max-width: 800px;
+  max-height: 70vh;
 }
 
 @font-face {
