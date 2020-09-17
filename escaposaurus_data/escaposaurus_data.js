@@ -138,7 +138,7 @@ var gameMissionAccept =
 var gameCredit =
   "Un jeu conçu et réalisé par : <br/>SIMON Noé<br/>BOURGOIN Baptiste<br/>GRÉGOIRE Alice<br/>POBELLE Solène<br/>LEMOINE Théo";
 var gameThanks =
-  "Remerciements au testeurs : <br/>VIGUIER Léo<br/>TERRIEN Antonin<br/>ACEITUNO Pierre<br/>redSPINE<br/>NOM PRENOM";
+  "Remerciements au testeurs : <br/>VIGUIER Léo<br/>TERRIEN Antonin<br/>ACEITUNO Pierre<br/>redSPINE<br/>TOUSSAIN Clara";
 
 var OSName = "Accès ENT — Université de Cambrouille";
 var explorerName = "ftp://cambrouille.net/";
