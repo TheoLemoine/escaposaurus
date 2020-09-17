@@ -65,21 +65,21 @@ var udiskData = {
         password: "Q4FD2A",
         sequence: 0,
         files: [
-          "photo_tAB_1.jpg",
-          "phOTo_tab_2.jpg",
-          "MAil_loclier.jpg",
-          "brouillON_to_rh.png",
+          "phOto_tab_1.jpg",
+          "phoTo_tab_2.jpg",
+          "mail_lOclier.jpg",
+          "brouilloN_to_rh.png",
         ],
         folders: [
           {
             foldername: "recherches_bernoulli",
             password: "68",
             sequence: 1,
-            files: ["sCAn_notes_1.jpeg"],
+            files: ["mail_soeur.png", "sCan_notes_1.jpeg"],
             folders: [
               {
                 foldername: "ecriture_article",
-                password: "CAABOTMAON",
+                password: "coton",
                 sequence: 2,
                 files: ["article_bernoulli.jpg"],
               },
@@ -119,11 +119,6 @@ var udiskData = {
           {
             foldername: "algo_oracle_glover",
             password: "fdflubzjsv57trzshjbejfnvui",
-            sequence: 99,
-          },
-          {
-            foldername: "retours_S3_Etudiants",
-            password: "fdflubzjsrfv5dejfnvui",
             sequence: 99,
           },
         ],
