@@ -235,7 +235,7 @@ var helperContacts = [
   allows the game to know it is the final contact that is called and to proceed with the ending
 */
 
-// last call contact prop vid must be 'missing'
+//!\\ last call contact prop vid must be 'missing'
 var missingContact = {
   vid: "missing",
   vod_folder: "",
@@ -251,9 +251,9 @@ var missingContact = {
 var tips = {
   Assistance: [
     "Assistance Informatique sur cambrouille.net/info",
-    "Assistance Informatique sur cambrouille.net/info",
-    "Assistance Informatique sur cambrouille.net/info",
-    "Assistance Informatique sur cambrouille.net/info",
+    "Attention a ne pas oublier votre carte izlo ce midi !",
+    "Un problème informatique ? Avez vous essayé de redémarrer votre ordinateur ?",
+    "Pour toute question, l'acceuil est ouvert entre 14h15 et 14h30 tout les jours ouvré.",
   ],
 };
 
